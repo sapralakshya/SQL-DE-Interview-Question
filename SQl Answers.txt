@@ -1,0 +1,18 @@
+1.) select names,email_id from employees;
+
+2.) select * from Customers where city = 'New York';
+
+3.) select * from Users order by DateOfBirth desc;
+
+4.) select * from Users order by RegistrationDate;
+
+5.) select name,position,salary from Employees order by salary desc limit 1;
+
+6.) select * from Customers where phone like '%+1-XXXX-XXXX-XXXX';
+
+7.) select names,Sum(purchase_amount) as total_purchase_amount from Orders group by names order by total_purchase_amount desc limit 5;
+
+8.) select category_name,sum(sales) as total_sales_amount,(100.0*Sum(sales)/(select sum(sales) from Sales)) as Percentage_of_sales from Sales group by category_name.
+
+9.) select names,email_id,sum(purchase_amt) as total_purchase_amt from Orders group by names,email_id order by total_purchase_amt desc;
+
